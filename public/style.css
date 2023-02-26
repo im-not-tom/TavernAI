@@ -625,11 +625,11 @@ display: none;
     padding-bottom: 5px;
     overflow-y: auto;
 }
-#api_url_text{
+#api_url_text, #textgenerationwebui_api_url_text{
     /*margin-right: 4px;*/
 	display:block;
 }
-#api_button{
+#api_button,#api_button_textgenerationwebui{
     cursor: pointer;
     color:#ffffffaa;
 	padding-left: 7px;
@@ -640,7 +640,7 @@ display: none;
     cursor: pointer;
     color:#ffffffaa;
 }
-#api_loading{
+#api_loading, #api_loading_textgenerationwebui{
     width: 25px;
     height: 25px;
     display: none;
@@ -655,7 +655,7 @@ display: none;
 
 /* RossAscends: doubling the API status/form CSS to place it on bottom below SHELD form*/
 
-#api_loading-bottom{
+#api_loading-bottom, #api_loading_textgenerationwebui-bottom{
     width: 25px;
     height: 25px;
     display: none;   
@@ -698,12 +698,12 @@ display: none;
 	display:inline-block;
 }
 
-#api_url_text-bottom{
+#api_url_text-bottom, #textgenerationwebui_api_url_text-bottom {
 	font-size: 0.75rem;
 	padding:1px;
 	
 }
-#api_button-bottom{
+#api_button-bottom, #api_button_textgenerationwebui-bottom{
     cursor: pointer;
     color:#ffffffaa;
 	font-size:0.75rem;
@@ -1227,20 +1227,20 @@ width: 103px;
     text-shadow: 1px 1px 5px black;
     color: rgba(255,255,255,0.5);
 }
-#online_status2{
+#online_status2, #online_status4{
     opacity: 0.5;
     margin-top: 2px;
     margin-left: 10px;
     margin-bottom: 30px;
 }
-#online_status_indicator2{
+#online_status_indicator2, #online_status_indicator4{
     border-radius: 7px;
     width: 14px;
     height: 14px;
     background-color: red;
     display: inline-block;
 }
-#online_status_text2{
+#online_status_text2, #online_status_text4{
     margin-left: 4px;
     display: inline-block;
 }
