@@ -1206,11 +1206,7 @@
                         }else{
                             mesSendString = '<START>\n'+mesSendString;
                         }
-                        if (main_api == "textgenerationwebui") {
-                            finalPromt = mesSendString+generatedPromtCache+promptBias;
-                        } else {
-                            finalPromt = worldInfoBefore+storyString+worldInfoAfter+mesExmString+mesSendString+generatedPromtCache+promptBias;
-                        }
+                        finalPromt = worldInfoBefore+storyString+worldInfoAfter+mesExmString+mesSendString+generatedPromtCache+promptBias;
                         
                         var this_settings = koboldai_settings[koboldai_setting_names[preset_settings]];
                         var this_amount_gen = parseInt(amount_gen);
@@ -1283,8 +1279,7 @@
                                     false, // early_stopping
                                     name1, // name1
                                     name2, // name2
-                                    worldInfoBefore+storyString+worldInfoAfter+mesExmString, // Context
-                                    "ctx", // Context
+                                    "", // Context
                                     true, // stop at newline
                                     1300, // Maximum prompt size in tokens
                                     1, // num attempts
